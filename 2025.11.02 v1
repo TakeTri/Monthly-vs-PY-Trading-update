@@ -56,14 +56,13 @@ Follow this framework precisely to construct your **HTML email report**.
 ## 1. Executive Summary
 * **Goal:** A high-level overview of performance and key drivers.
 * **Structure:**
-    1.  **KPI Table:** A single HTML table for **Total JET** and **Total JET excl. RoW**. Show **Orders** and **GTV CC** (with columns for CM, LM, and YoY%).
+    1.  **KPI Table:** A single HTML table for **Total JET** and **Total JET excl. RoW**. Show **Orders** and **GTV CC** (with columns for CM, LM, and YoY%. With CM and LM be called out as "month year" so for example Sep 25 and Sep 24).
     2.  **Narrative Analysis:**
         * **Orders:** A bullet point analyzing the **Total JET** `YoY%` trend.
         * **GTV CC:** A bullet point analyzing the **Total JET excl. RoW** trend.
 * **Analytical Instructions:**
     * **Orders:** Use the `"% of total order variance"` metric for each country to identify which countries had the most significant impact (positive or negative) on the overall **Total JET** order variance (But don't mention this in the text, its only for internal use)
     * **Explain Why:** For each highlighted country, *concisely* explain its trend by linking it to the *primary* drivers (e.g., promotions, operational, external factors) identified in your deep-dive analysis.
-    * **Trend:** Mention if the `CM YoY%` trend is an acceleration or deceleration from the `PM YoY%` trend.
     * **GTV CC:** Briefly explain the relationship between **Orders** and **ATV CC** in driving the GTV trend.
 
 ## 2. Country and Key Segment Performance Analysis
@@ -73,16 +72,15 @@ Follow this framework precisely to construct your **HTML email report**.
     * **NL**
     * **Rest of Europe**
     * **UK**
-    * **IE**
     * **CA**
     * **Rest of RoW**
 * **Content per Subsection:**
-    1.  **KPI Table:** An HTML table for that specific segment (**Orders** & **GTV CC**: CM, LM, YoY%).
+    1.  **KPI Table:** An HTML table for that specific segment (**Orders** & **GTV CC**: CM, LM, YoY%. With CM and LM be called out as "month year" so for example Sep 25 and Sep 24).
     2.  **Narrative Analysis:** Analyze the `YoY%` changes for **Orders** and **GTV**.
 * **Analytical Instructions (Explaining the "Why"):**
     * This is the core of your analysis. When explaining a country's **Order** trend, you must investigate the drivers listed below.
     * **Only** comment on a driver if it is **material** (see rules in Section 5) AND the correlation is **logical**.
-    * When stating a cause, explicitly mention its direction (e.g., "due to *lower* voucher spend" or "an *increase* in bad weather days").
+    * When stating a cause, explicitly mention its direction (e.g., "due to *lower* voucher spend" or "an *increase* in bad weather days") 
     * **Drivers to Investigate:**
         * **Service Type (Marketplace vs. Delivery)**
         * **Promotional Impact (Vouchers & RFOs)**
@@ -90,7 +88,7 @@ Follow this framework precisely to construct your **HTML email report**.
         * **External & Customer Factors (Weather, Special Days, JET+ Orders, New Customers)**
         * **Geographic & Chain Drivers (Cities & Chains)**
         * **ATV Components**
-    * **Readability:** Use `<ul>` and `<li>` to list the 2-3 material drivers for a country's trend. This is key for readability.
+    * **Readability:** Use `<ul>` and `<li>` to list the 2-3 material drivers for a country's order variance YoY. This is key for readability.
     * **Note:** In "Rest of Europe" and "Rest of RoW", only provide detailed country call-outs for those countries with noteworthy `YoY%` changes.
 
 ## 3. Anomaly Detection
@@ -107,17 +105,18 @@ Your narrative must adhere to the following rules in your output:
 
 ### General Analysis Rules
 * **Core Exclusions:**
-    * **DO NOT** mention absolute numbers for any KPI (e.g., "1.2 million orders"). Focus on percentage changes and trends.
+    * **DO NOT** mention absolute numbers for any KPI (e.g., "1.2 million orders"). Focus on percentage changes.
     * **DO NOT** make up data or explanations. If data is unavailable, do not comment.
 * **Driver Analysis Logic:**
     * Only comment on a driver if it is **material** (see rules below) AND the correlation is **logical**.
 * **Promotional Alignment Rule:**
     * Only highlight a promo trend if it **matches the overall order trend**.
-    * *Example:* If orders are **down**, only highlight **negative** promo trends (e.g., "lower voucher spend").
-    * *Example:* If orders are **up**, only highlight **positive** promo trends (e.g., "higher RFO spend").
+        * *Example:* If orders are **down**, only highlight **negative** promo trends (e.g., "lower voucher spend").
+        * *Example:* If orders are **up**, only highlight **positive** promo trends (e.g., "higher RFO spend").
 * **Reporting Style (Cities & Chains):**
     * Be direct. **DO NOT** use introductory phrases like "At the city level...".
     * *Correct Example:* "**Berlin's** order performance **decreased** by -3% YoY, with its order share **falling** from 21% to 19%."
+    * When explaining YoY variances, make sure to mention the % difference (e.g., +8% YoY , or -3% YoY), unless specified otherwise below.
 
 ### Materiality & Formatting Rules (by Driver)
 * **General Percentage Formatting:** Round all main percentage comparisons (YoY) to **one decimal point**, unless specified otherwise below.
@@ -144,14 +143,15 @@ Your narrative must adhere to the following rules in your output:
     * **Metric:** `Subscription orders as % of total orders YoY difference in ppt`.
 * **New Customers:**
     * **Metric:** `New customers YoY%`.
-    * **Materiality:** `YoY%` trend is **10% or more**.
+    * **Materiality:** `YoY%` trend is **5% or more**.
     * **Formatting:** Round to the **nearest whole number (zero decimals)**.
 * **Geographic & Chain Drivers (Cities & Chains):**
     * **Materiality:** Makes up at least **4%** of the country's total orders.
     * **Formatting:** Round all related percentages to the **nearest whole number (zero decimals)**.
 * **ATV Components:**
-    * **Metrics:** `Food value per order change`, `Service fees per order change`, etc.
-    * **Materiality:** Only mention a component if it contributes at least **20%** of the total absolute `ATV per order change YoY`.
+    * **Metrics:**: Food value per order, Service fees per order, Delivery fees per order, Payment service fees per order change, "Small order fee per order change" , "Tips per order change" , "Other fee order change" , "Donations per order chang" , "Restaurant discounts per order change".
+    * **Materiality:** Only mention a component if it contributes at least **20%** of the total absolute `ATV per order change YoY`. (Don't mention the materiality in the text, its just for internal use)
+    * **Reporting style:** Explain the variance using the absolute difference. 
 
 ---
 
@@ -170,8 +170,7 @@ Your entire response **must** be valid HTML.
 ### HTML & Technical Rules
 * **Bolding (`<strong>`):** Use `<strong>` tags *only*. Do NOT use `<b>` or markdown `**`. Apply `<strong>` tags to:
     * Segments, countries, and cities (e.g., `<strong>Total JET</strong>`, `<strong>DE</strong>`, `<strong>Berlin</strong>`).
-    * Directional words describing a trend (e.g., `<strong>downturn</strong>`, `<strong>improving</strong>`, `<strong>softening</strong>`).
-    * *Example:* `<p><strong>Orders</strong> experienced a -1.5% <strong>downturn</strong>.</p>`
+    * *Example:* `<p><strong>Orders</strong> experienced a -1.5% downturn
 * **Currency:** Add a `€` sign in front of all GTV and ATV values.
 * **Section Titles:** Use an HTML table with `bgcolor="#F3630C"` and `color="#FFFFFF"` (e.g., `<h3>Executive Summary</h3>` should be styled this way).
 * **Data Tables:** All tables **must** use this consistent style:
