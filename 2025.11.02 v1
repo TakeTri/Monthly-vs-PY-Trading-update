@@ -62,7 +62,7 @@ Follow this framework precisely to construct your **HTML email report**.
         * **GTV CC:** A bullet point analyzing the **Total JET excl. RoW** trend.
 * **Analytical Instructions:**
     * **Orders:** Identify the countries that were the most significant drivers of the overall JET orders YoY% change based on `"% of total order variance"` metric (But don't mention this in the text, its only for internal use), listing the most material country first and don't mention to many countries as it overcrowds the text
-    * **Explain Why:** For each highlighted country create a sub bullet point and explain its trend by linking it to the *primary* drivers (e.g., promotions, operational, external factors) identified in your deep-dive analysis.
+    * **Explain Why:** For each highlighted country create a sub bullet point and explain its trend by linking and explaining the drivers in a sub-bullet point (e.g., promotions, operational, external factors) identified in your deep-dive analysis. 
     * **GTV CC:** Briefly explain the relationship between **Orders** and **ATV CC** in driving the GTV trend.
 
 ## 2. Country and Key Segment Performance Analysis
@@ -116,7 +116,7 @@ Your narrative must adhere to the following rules in your output:
 * **Reporting Style (Cities & Chains):**
     * Be direct. **DO NOT** use introductory phrases like "At the city level...".
     * *Correct Example:* "**Berlin's** order performance **decreased** by -3% YoY, with its order share **falling** from 21% to 19%."
-    * When explaining YoY variances, make sure to mention the % difference (e.g., +8% YoY , or -3% YoY), unless specified otherwise below.
+    * When explaining YoY variances, make sure to mention the % difference (e.g., +8% YoY , or -3% YoY) or ppt difference (e.g. +3ppt YoY, or -2ppt YoY), unless specified otherwise below.
 
 ### Materiality & Formatting Rules (by Driver)
 * **General Percentage Formatting:** Round all main percentage comparisons (YoY) to **one decimal point**, unless specified otherwise below.
@@ -124,6 +124,8 @@ Your narrative must adhere to the following rules in your output:
     * **Metrics:** `Orders marketplace YoY%`, `Orders Delivery YoY%`.
     * **Materiality:** Only mention a marketplace or delivery share of total orders when its **10% or greater**
     * **Reporting analysis:** Analyse the YoY% change and the change in Delivery share %.
+    * **Formatting:** Round to the **nearest whole number (zero decimals)**
+    * Example: Delivery orders increased significantly by +30% YoY. The Delivery order share increased by +3.4ppt to 16%. 
 * **Promotions (Vouchers & RFOs):**
     * **Metrics:** `Average voucher spend YoY%`, `Average RFO spend YoY%`.
     * **Materiality:** `YoY%` change is **greater than 5%**.
@@ -152,7 +154,8 @@ Your narrative must adhere to the following rules in your output:
     * **Formatting:** Round all related percentages to the **nearest whole number (zero decimals)**.
 * **ATV Components:**
     * **Metrics:**: The Average transaction value per order is captured by the "ATV per order" metric in the data and shows the average transaction value paid by the consumer per order. ATV per order is the sum of the following components:Food value per order, Service fees per order, Delivery fees per order, Payment service fees per order change, "Small order fee per order change" , "Tips per order change" , "Other fee order change" , "Donations per order chang" , "Restaurant discounts per order change".
-    * **Materiality:** Only bring up a component if it contributes atleast an aboslute value of 20% of the overall ATV per order change abs diff YoY (Please use the non constant currency metric) . For example if ATV per order change YoY in DE is €2.20, and the increase in food value YoY of €1.80 and increase delivery fee is €0.20. Only bring up the food value YoY since it explains 81% (calculation = 1.8/2.2), and do not bring up delivery fee variance since its only 9% (calculation= 0.2/2.2)
+    * **Materiality:** Only bring up a component if it contributes atleast an aboslute value of 20% of the overall ATV per order change abs diff YoY (Please use the non constant currency metric) . For example if ATV per order change YoY in DE is €2.20, and the increase in food value YoY of €1.80 and increase delivery fee is €0.20. Only bring up the food value YoY since it explains 81% (calculation = 1.8/2.2), and do not bring up delivery fee variance since its only 9% (calculation= 0.2/2.2). 
+    * **Reporting format: Example of how to formulate a sentence. ATV per order in DE increased by +€2.20, driven by an increase in food value of +€1.80 YoY and Restaurant discounts +€0.30 YoY
     * **Reporting style:** Explain the variance using the absolute difference. 
 ---
 
