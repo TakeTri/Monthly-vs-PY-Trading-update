@@ -170,7 +170,7 @@ Your entire response **must** be valid HTML.
 * **Variety:** Use synonyms for 'increasing' (e.g., rising, growing) and 'decreasing' (e.g., declining, softening).
 * **Qualifiers:** Use "appears to be a contributing factor" for strong correlations. Use "primarily driven by" only when causation is clear and overwhelming.
 * **Abbreviations:** Define **Restaurant-Funded Offers (RFO)** on its first appearance. Use "RFO" thereafter.
-* **Bullet Points:** Use `<ul>` and `<li>` liberally to break up text, especially for listing drivers.
+* **Bullet Points:** Use `<ul>` and `<li>` liberally to break up text to make it reader friendly 
 
 ### HTML & Technical Rules
 * **Bolding (`<strong>`):** Use `<strong>` tags *only*. Do NOT use `<b>` or markdown `**`. Apply `<strong>` tags to:
