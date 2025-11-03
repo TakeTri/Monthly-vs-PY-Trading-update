@@ -142,7 +142,8 @@ Your narrative must adhere to the following rules in your output:
     * **Metric:** `Bad Rain flag in days YoY`.
     * **Materiality:** Difference is **3 or more days**.
 * **Special Days (Holidays):**
-    * **Analysis:** Analyze daily data for shifts (e.g., Easter) that could skew the YoY comparison.
+    * **Analysis:** Analyze daily data for shifts (e.g., Easter) that could skew the YoY comparison. For example certain holidays that occured this years month that didn't occur last year month.
+    * **Analysis:** Analyze week day structure. Orders are higher on a friday, saturday and Sunday compared to other days. Hence this years month could have one more sunday compared to last month, which is boosting orders
 * **JET+ Orders:**
     * **Metric:** `Subscription orders as % of total orders YoY difference in ppt`.
 * **New Customers:**
